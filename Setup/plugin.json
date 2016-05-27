@@ -1,0 +1,29 @@
+{
+  "title": "SCSS",
+  "version": "1.00",
+  "name": "Scss",
+  "description": "Implements SCSS parser using leafo/scssphp. Requires leafo/scssphp. Install it using the Composer plugin or intstall in Plugin/Scss/vendor/leafo/scssphp",
+  "author": "Brainiac.nl",
+
+  "options": [
+    {
+      "label": "Compress output",
+      "name": "compressOutput",
+      "type": "Checkbox",
+      "default": 1
+    },
+    {
+      "label": "Include leafo/scssphp",
+      "name": "includeMethod",
+      "type": "Select",
+      "default": "composer",
+      "values":["composer","relative path"]
+    },
+    {
+      "label": "Relative path to leafo/scssphp",
+      "name": "leafoPath",
+      "type": "Text",
+      "default": "Plugin/Scss/vendor/leafo/scssphp"
+    }
+  ]
+}
